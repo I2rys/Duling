@@ -28,7 +28,7 @@ NPM Packages:
     node index.js
 
 ## Note
-For the setup and stuff please read README.txt
+For more information please read README.txt
 
 ## License
 MIT © I2rys
