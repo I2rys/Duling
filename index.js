@@ -20,7 +20,7 @@ Checker_Data.whitelisted_accounts = [] //To avoid duplicate
 function Add_Hits(account){
     var Hits = Fs.readFileSync("./hits.txt", "utf8")
 
-    if(Hits.length == 0){
+    if(!Hits.length){
         Fs.writeFileSync("./hits.txt", account, "utf8")
     }else{
         Fs.writeFileSync("./hits.txt", `${Hits}\n${account}`, "utf8")
@@ -46,7 +46,7 @@ function Initiate_A_Checker(start_in_proxy_index){
             return
         }
 
-        if(Accounts[Self_Account_Index] == undefined){
+        if(!Accounts[Self_Account_Index]){
             Self_Account_Index += 1
             Main()
             return
@@ -76,7 +76,7 @@ function Initiate_A_Checker(start_in_proxy_index){
                 return
             }
 
-            if(res.body == ""){
+            if(!res.body){
                 start_in_proxy_index += 1
                 Main()
                 return
