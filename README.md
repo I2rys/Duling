@@ -1,6 +1,6 @@
-
 <h1 align="center">Duling</h1>
 <h4 align="center">A simple but powerful and fast Duolingo checker written in NodeJS</h4>
+<h4 align="center">Duling is now no longer maintained as I cannot maintain it anymore.</h4>
 <p align="center">
 <img src="https://github.com/I2rys/Duling/raw/main/preview.PNG?raw=true"></img>
 </p>
